@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     background-color: aliceblue;
     color: #333;
 }
 
-.site-header{
+.site-header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
@@ -22,9 +22,17 @@ body{
     align-items: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
 }
 
-a{
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}   
+
+a {
     text-decoration: none;
     color: #fff;
 }
@@ -34,18 +42,117 @@ a{
     font-size: 2em;
 }
 
-.main-nav .nav-list {
+.main-nav .nav-link {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-.nav-list {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
+.email-link1 {
+    color: #8ee7f7;
 }
 
-.email-link1{
-    color: #333;
+.main-nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
+
+.main-nav .nav-link:hover {
+    color: rgb(0, 255, 255)
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.article {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgb(187, 187, 187);
+    border-radius: 5px;
+}
+
+.article-header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.article-title {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.article-meta {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.article-section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.0;
+}
+
+.image-figure {
+    margin-top: 20px 0;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.10em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.sidebar {
+    background-color: #f9f9f9;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+
+.sidebar-title{
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.sidebar-text{
+    color: #555;
+    line-height: 1.5;
+}
+ .site-footer{
+    background-color: #333;
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+ }
